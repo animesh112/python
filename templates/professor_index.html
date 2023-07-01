@@ -1,0 +1,38 @@
+{% extends 'professor_dashboard.html' %} {% block body %}
+<div style="margin-top: -52px" class="container">
+  <div class="col-12 d-flex align-items-center justify-content-center">
+    <div
+      style="border-radius: 30px !important"
+      class="bg-white shadow-soft border rounded border-light w-110 fmxw-650"
+    >
+      <div class="text-center text-md-center mt-md-0">
+        <h4 style="margin-top: 20px" class="mb-0 4">
+          Welcome to <bold>FaceBit</bold>
+        </h4>
+        <br />
+        <h1 style="display: flex; margin-left: 16px" class="mb-0 h3">
+          Hi, Professor: {{session.name}}
+        </h1>
+        <br />
+        <h4>
+          Teaching is a very noble profession that shapes the character,
+          caliber, and future of an individual!!
+        </h4>
+        <h5>Thank you for shaping the future of Students!</h5>
+        <div style="display: flex; justify-content: center">
+          <img
+            style="
+              margin-top: 20px;
+              width: 50%;
+              display: flex;
+              justify-content: center;
+              height: 50%;
+            "
+            src="{{ url_for('static', filename='hello.png') }}"
+          />
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+  </div>
+</div>
